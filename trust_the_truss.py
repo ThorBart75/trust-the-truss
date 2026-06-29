@@ -345,12 +345,25 @@ def plot_truss(nodes_df, members_df, results=None, scale=1.0):
 
     return fig
 
+def show_header_image(filename, caption=None):
+    image_path = Path(__file__).parent / "assets" / filename
+
+    if image_path.exists():
+        st.image(
+            image_path,
+            caption=caption,
+            width="stretch",
+        )
+    else:
+        st.info(f"Header image not found: {image_path}")
 
 # ------------------------------------------------------------
 # Streamlit app
 # ------------------------------------------------------------
 
 st.set_page_config(page_title="Trust the Truss", layout="wide")
+
+show_header_image("trust_the_truss_header.png")
 
 st.title("Trust the Truss")
 # st.title("2D Truss Solver")
