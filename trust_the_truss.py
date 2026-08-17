@@ -20,6 +20,11 @@ from pathlib import Path
 # ------------------------------------------------------------
 
 PROFILE_CATALOGUE = {
+
+    # ------------------------------------------------------------
+    # Steel flat bars
+    # designation: width x thickness [mm]
+    # ------------------------------------------------------------
     "Flat 20x5": {
         "area_mm2": 100.0,
         "E": 210e9,
@@ -32,6 +37,54 @@ PROFILE_CATALOGUE = {
         "density": 7850.0,
         "cost_per_kg": 2.50,
     },
+    "Flat 40x5": {
+        "area_mm2": 200.0,
+        "E": 210e9,
+        "density": 7850.0,
+        "cost_per_kg": 2.50,
+    },
+    "Flat 40x8": {
+        "area_mm2": 320.0,
+        "E": 210e9,
+        "density": 7850.0,
+        "cost_per_kg": 2.50,
+    },
+    "Flat 50x8": {
+        "area_mm2": 400.0,
+        "E": 210e9,
+        "density": 7850.0,
+        "cost_per_kg": 2.50,
+    },
+    "Flat 60x10": {
+        "area_mm2": 600.0,
+        "E": 210e9,
+        "density": 7850.0,
+        "cost_per_kg": 2.50,
+    },
+    "Flat 80x10": {
+        "area_mm2": 800.0,
+        "E": 210e9,
+        "density": 7850.0,
+        "cost_per_kg": 2.50,
+    },
+    "Flat 100x10": {
+        "area_mm2": 1000.0,
+        "E": 210e9,
+        "density": 7850.0,
+        "cost_per_kg": 2.50,
+    },
+    "Flat 100x15": {
+        "area_mm2": 1500.0,
+        "E": 210e9,
+        "density": 7850.0,
+        "cost_per_kg": 2.50,
+    },
+
+    # ------------------------------------------------------------
+    # Steel solid round bars
+    # designation: diameter d [mm]
+    # A = pi * d² / 4
+    # ------------------------------------------------------------
     "Round d10": {
         "area_mm2": np.pi * 10.0**2 / 4.0,
         "E": 210e9,
@@ -40,6 +93,42 @@ PROFILE_CATALOGUE = {
     },
     "Round d15": {
         "area_mm2": np.pi * 15.0**2 / 4.0,
+        "E": 210e9,
+        "density": 7850.0,
+        "cost_per_kg": 2.80,
+    },
+    "Round d20": {
+        "area_mm2": np.pi * 20.0**2 / 4.0,
+        "E": 210e9,
+        "density": 7850.0,
+        "cost_per_kg": 2.80,
+    },
+    "Round d25": {
+        "area_mm2": np.pi * 25.0**2 / 4.0,
+        "E": 210e9,
+        "density": 7850.0,
+        "cost_per_kg": 2.80,
+    },
+    "Round d30": {
+        "area_mm2": np.pi * 30.0**2 / 4.0,
+        "E": 210e9,
+        "density": 7850.0,
+        "cost_per_kg": 2.80,
+    },
+    "Round d40": {
+        "area_mm2": np.pi * 40.0**2 / 4.0,
+        "E": 210e9,
+        "density": 7850.0,
+        "cost_per_kg": 2.80,
+    },
+    "Round d50": {
+        "area_mm2": np.pi * 50.0**2 / 4.0,
+        "E": 210e9,
+        "density": 7850.0,
+        "cost_per_kg": 2.80,
+    },
+    "Round d60": {
+        "area_mm2": np.pi * 60.0**2 / 4.0,
         "E": 210e9,
         "density": 7850.0,
         "cost_per_kg": 2.80,
